@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'fs-home',
@@ -10,7 +11,7 @@ export class HomeComponent implements OnInit {
   public titleFree: any;
   public titleTendencies: any;
 
-  constructor() {
+  constructor(private apiService: ApiService) {
     this.titleMostPopular = {
       title: 'Os Mais Populares',
       list: ['Streaming', 'Na TV', 'Para Alugar', 'Nos Cinemas'],
@@ -25,5 +26,7 @@ export class HomeComponent implements OnInit {
     };
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.apiService.getMostPopular();
+  }
 }
