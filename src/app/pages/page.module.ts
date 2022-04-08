@@ -8,4 +8,4 @@ import { HomeComponent } from './home/home.component';
   exports: [HomeComponent],
   imports: [CommonModule, ComponentsModule],
 })
-export class PageModule {}
+export class PagesModule {}
