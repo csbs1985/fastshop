@@ -1,21 +1,23 @@
 <section class="fs-header">
-  <div class="fs-header__left">
-    <fs-icon icon="logo" [height]="20"></fs-icon>
+  <div class="fs-header__content">
+    <div class="fs-header__left">
+      <fs-icon icon="logo" [height]="20"></fs-icon>
 
-    <ul>
-      <li *ngFor="let item of menu">{{ item }}</li>
-    </ul>
-  </div>
+      <ul>
+        <li *ngFor="let item of menu">{{ item }}</li>
+      </ul>
+    </div>
 
-  <div class="fs-header__right">
-    <fs-icon icon="plus" [height]="20"></fs-icon>
+    <div class="fs-header__right">
+      <fs-icon icon="plus" [height]="20"></fs-icon>
 
-    <button class="fs-header__language">PT</button>
+      <button class="fs-header__language">PT</button>
 
-    <ul>
-      <li *ngFor="let item of submenu">{{ item }}</li>
-    </ul>
+      <ul>
+        <li *ngFor="let item of submenu">{{ item }}</li>
+      </ul>
 
-    <fs-icon icon="search" [height]="20"></fs-icon>
+      <fs-icon icon="search" [height]="20"></fs-icon>
+    </div>
   </div>
 </section>
