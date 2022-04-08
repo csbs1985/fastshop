@@ -1,0 +1,48 @@
+.fs-footer {
+  width: 100%;
+  background-color: var(--tmdbDarkBlue);
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    div {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      img {
+        width: 130px;
+        height: 94px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        border-radius: 5px;
+        background-color: var(--tmdbLight);
+        padding: 8px 16px;
+        color: var(--tmdbLightBlue);
+        font-weight: 700;
+        font-size: 19;
+      }
+    }
+
+    ul {
+      margin: 40px 0 0 40px;
+    }
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    opacity: 0.1;
+    font-size: 0.7em;
+    margin-top: 20px;
+  }
+}

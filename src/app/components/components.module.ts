@@ -3,10 +3,16 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IconComponent } from './icon/icon.component';
 import { BannerComponent } from './banner/banner.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [IconComponent, HeaderComponent, BannerComponent],
-  exports: [IconComponent, HeaderComponent, BannerComponent],
+  declarations: [
+    IconComponent,
+    HeaderComponent,
+    BannerComponent,
+    FooterComponent,
+  ],
+  exports: [IconComponent, HeaderComponent, BannerComponent, FooterComponent],
   imports: [CommonModule],
 })
 export class ComponentsModule {}
