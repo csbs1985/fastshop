@@ -1,4 +1,8 @@
 .fs-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -6,27 +10,45 @@
   background-color: #032541;
   padding: 0 40px;
 
-  &__left {
+  &__left,
+  &__right {
     display: flex;
     align-items: center;
-    height: 100%;
+  }
 
-    ul {
-      display: inline-flex;
-      align-items: center;
-      margin: 0;
-      margin-left: 16px;
-      li {
-        font-weight: 600;
-        padding: 0 8px;
-        margin-right: 14px;
-      }
+  fs-icon {
+    height: 20px;
+    cursor: pointer;
+  }
+
+  ul {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 30px;
+
+    li {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 0 8px;
+      margin-left: 14px;
     }
   }
 
-  &__right {
-    height: 100%;
-    width: 200px;
-    background-color: red;
+  &__language {
+    width: 28px;
+    height: 26px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: transparent;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: linear 0.1s;
+    cursor: pointer;
+
+    &:hover {
+      color: #032541;
+      background-color: #fff;
+    }
   }
 }
