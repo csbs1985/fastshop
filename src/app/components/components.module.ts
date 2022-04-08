@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { IconComponent } from './icon/icon.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -11,8 +12,15 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     BannerComponent,
     FooterComponent,
+    TitleComponent,
   ],
-  exports: [IconComponent, HeaderComponent, BannerComponent, FooterComponent],
+  exports: [
+    IconComponent,
+    HeaderComponent,
+    BannerComponent,
+    FooterComponent,
+    TitleComponent,
+  ],
   imports: [CommonModule],
 })
 export class ComponentsModule {}

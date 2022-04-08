@@ -6,7 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  public titleMostPopular: any;
+  public titleFree: any;
+  public titleTendencies: any;
+
+  constructor() {
+    this.titleMostPopular = {
+      title: 'Os Mais Populares',
+      list: ['Streaming', 'Na TV', 'Para Alugar', 'Nos Cinemas'],
+    };
+    this.titleFree = {
+      title: 'Grátis para Assistir',
+      list: ['Filmes', 'TV'],
+    };
+    this.titleTendencies = {
+      title: 'Tendências',
+      list: ['Hoje', 'Nesta Semana'],
+    };
+  }
 
   ngOnInit(): void {}
 }
