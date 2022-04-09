@@ -1,0 +1,25 @@
+.gradient {
+  &--dark {
+    background: linear-gradient(
+      to right,
+      rgba(var(--tmdbDark), 0.8) 0%,
+      rgba(var(--tmdbDark), 0) 100%
+    );
+  }
+
+  &--green {
+    background: linear-gradient(
+      to right,
+      rgba(#1ed5a9, 1) 0%,
+      rgba(#01b4e4, 1) 100%
+    );
+  }
+
+  &--red {
+    background: linear-gradient(
+      to right,
+      var(--tmdbLogoOrange),
+      var(--tmdbLogoRed)
+    );
+  }
+}

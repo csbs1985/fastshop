@@ -1,0 +1,19 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--tmdbLight);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border: none;
+  }
+}

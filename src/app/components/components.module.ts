@@ -5,6 +5,7 @@ import { IconComponent } from './icon/icon.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { TitleComponent } from './title/title.component';
+import { LeadersComponent } from './leaders/leaders.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TitleComponent } from './title/title.component';
     BannerComponent,
     FooterComponent,
     TitleComponent,
+    LeadersComponent,
   ],
   exports: [
     IconComponent,
@@ -20,6 +22,7 @@ import { TitleComponent } from './title/title.component';
     BannerComponent,
     FooterComponent,
     TitleComponent,
+    LeadersComponent,
   ],
   imports: [CommonModule],
 })

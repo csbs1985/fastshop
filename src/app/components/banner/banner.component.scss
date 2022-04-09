@@ -1,10 +1,5 @@
 .fs-banner {
-  background-image: linear-gradient(
-      to right,
-      rgba(#032541, 0.8) 0%,
-      rgba(#032541, 0) 100%
-    ),
-    url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/bcT8CaBIj086WVD7K529h78eujb.jpg");
+  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/bcT8CaBIj086WVD7K529h78eujb.jpg");
   height: calc(100vh / 2.5);
   max-height: 360px;
   min-height: 300px;
@@ -53,13 +48,8 @@
       height: 46px;
       padding: 10px 26px;
       border: none;
-      background: linear-gradient(
-        to right,
-        rgba(#1ed5a9, 1) 0%,
-        rgba(#01b4e4, 1) 100%
-      );
       border-radius: 30px;
-      color: #fff;
+      color: var(--tmdbLight);
       font-weight: 700;
       font-size: 14px;
 

@@ -1,0 +1,63 @@
+.fs-leaders {
+  padding: 40px;
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--accountTeal);
+    text-transform: uppercase;
+  }
+
+  &__point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__graphic {
+    display: flex;
+    align-items: center;
+  }
+
+  &__green,
+  &__red {
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  &__red {
+    width: 133px;
+  }
+
+  h5 {
+    margin-right: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    li {
+      display: flex;
+      width: 50%;
+      margin-bottom: 20px;
+
+      p {
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--tmdbDark);
+        margin-left: 10px;
+      }
+    }
+  }
+}

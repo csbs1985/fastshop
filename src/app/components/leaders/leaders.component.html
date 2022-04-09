@@ -1,0 +1,37 @@
+<section class="fs-leaders">
+  <div class="display--align-items-center">
+    <h5>Líderes</h5>
+
+    <div>
+      <div class="fs-leaders__graphic">
+        <div class="gradient--green fs-leaders__point"></div>
+        <p class="text--legend">Total de Edições</p>
+      </div>
+
+      <div class="fs-leaders__graphic">
+        <div class="gradient--red fs-leaders__point"></div>
+        <p class="text--legend">Edições Nesta Semana</p>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li *ngFor="let item of leaders">
+      <div class="fs-leaders__avatar">{{ item.abbreviation }}</div>
+
+      <div class="fs-leaders__content">
+        <h6>{{ item.name }}</h6>
+
+        <div class="fs-leaders__graphic">
+          <div class="gradient--green fs-leaders__green"></div>
+          <p>{{ item.total }}</p>
+        </div>
+
+        <div class="fs-leaders__graphic">
+          <div class="gradient--red fs-leaders__red"></div>
+          <p>{{ item.week }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
