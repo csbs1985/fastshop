@@ -27,6 +27,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.apiService.getMostPopular();
+    // this.apiService.getMostPopular();
   }
 }

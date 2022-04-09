@@ -16,19 +16,25 @@
   </div>
 
   <ul>
-    <li *ngFor="let item of leaders">
+    <li *ngFor="let item of leaders; let i = index" id="graphic-{{ i }}">
       <div class="fs-leaders__avatar">{{ item.abbreviation }}</div>
 
       <div class="fs-leaders__content">
         <h6>{{ item.name }}</h6>
 
         <div class="fs-leaders__graphic">
-          <div class="gradient--green fs-leaders__green"></div>
+          <div
+            class="gradient--green fs-leaders__bar"
+            [style.width]="fillWidth(item.total, i)"
+          ></div>
           <p>{{ item.total }}</p>
         </div>
 
         <div class="fs-leaders__graphic">
-          <div class="gradient--red fs-leaders__red"></div>
+          <div
+            class="gradient--red fs-leaders__bar"
+            [style.width]="fillWidth(item.week, i)"
+          ></div>
           <p>{{ item.week }}</p>
         </div>
       </div>

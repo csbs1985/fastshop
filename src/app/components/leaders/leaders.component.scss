@@ -26,15 +26,9 @@
     align-items: center;
   }
 
-  &__green,
-  &__red {
-    width: 30px;
+  &__bar {
     height: 8px;
     border-radius: 4px;
-  }
-
-  &__red {
-    width: 133px;
   }
 
   h5 {
