@@ -8,6 +8,7 @@ import { TitleComponent } from './title/title.component';
 import { LeadersComponent } from './leaders/leaders.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
     TitleComponent,
     LeadersComponent,
     GalleryComponent,
+    MenuComponent,
   ],
   exports: [
     IconComponent,
@@ -27,6 +29,7 @@ import { RouterModule } from '@angular/router';
     TitleComponent,
     LeadersComponent,
     GalleryComponent,
+    MenuComponent,
   ],
   imports: [CommonModule, RouterModule],
 })

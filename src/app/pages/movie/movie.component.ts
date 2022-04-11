@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'flix-movie',
@@ -6,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie.component.scss'],
 })
 export class MovieComponent implements OnInit {
-  constructor() {}
+  private movieId?: string;
+
+  constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    console.log('funciona');
+    this.movieId = this.route.snapshot.paramMap.get('id')?.toString() || '';
+
+    this.apiService
+      .getMovies(this.movieId)
+      .then((result: any) => {
+        console.log(result);
+      })
+      .catch((error) =>
+        console.log('ERROR: não foi possível retornar o filme' + error)
+      );
   }
 }

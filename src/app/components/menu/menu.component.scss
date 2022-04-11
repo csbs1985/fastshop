@@ -1,0 +1,31 @@
+.fs-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      color: var(--tmdbDark);
+      margin-right: 40px;
+      border-bottom: 3px solid transparent;
+
+      &:first-of-type {
+        border-bottom-color: var(--tmdbDarkBlue);
+      }
+
+      span {
+        color: var(--tmdbDark);
+        font-size: 10px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

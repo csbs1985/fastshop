@@ -23,6 +23,11 @@ export class ApiService {
     return this.http.get(url).toPromise();
   }
 
+  getMovies(movieId: string) {
+    const url = `${this.baseUrl}/movie/${movieId}?${this.key}`;
+    return this.http.get(url).toPromise();
+  }
+
   getTrailers() {
     const url = `${this.baseUrl}/discover/movie?sort_by=trailer_scroller.desc&${this.key}`;
     return this.http.get(url).toPromise();
