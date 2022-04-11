@@ -1,0 +1,42 @@
+.fs-gallery {
+  width: 100%;
+
+  ul {
+    display: flex;
+    padding: 0 40px;
+    overflow-x: auto;
+
+    li {
+      position: relative;
+      margin-right: 20px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      img {
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+        border-radius: 8px;
+        width: 150px;
+        max-width: 220px;
+        height: 225px;
+        max-height: 330px;
+        background: #dbdbdb;
+        overflow: hidden;
+      }
+
+      a {
+        font-weight: 700;
+
+        &:hover {
+          color: var(--tmdbLightBlue);
+        }
+      }
+
+      a,
+      p {
+        color: var(--tmdbDark);
+      }
+    }
+  }
+}

@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  url: 'https://www.themoviedb.org/remote/panel',
-  key: 'api_key=f68d755c1831888e88699b865a3f194b',
+  url: 'https://api.themoviedb.org/3',
+  key: 'api_key=7bc483bd32152f880cf4da4d09f8f01c',
 };
 
 /*
