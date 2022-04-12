@@ -2,14 +2,14 @@
   width: 100%;
 
   div {
-    max-width: 1300px;
+    max-width: var(--width-page);
     margin: 0 auto 20px;
     width: 100%;
     padding: 20px 40px;
   }
 
   ul {
-    max-width: 1300px;
+    max-width: var(--width-page);
     margin: 20px auto 0;
     display: flex;
 

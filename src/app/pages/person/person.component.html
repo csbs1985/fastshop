@@ -1,0 +1,68 @@
+<section class="fs-person">
+  <fs-menu></fs-menu>
+
+  <div class="fs-person__content">
+    <div class="fs-person__left">
+      <img
+        *ngIf="person.profile_path; else noPost"
+        class="margin-bottom--30"
+        [src]="URL_POSTER + person.profile_path"
+        [alt]="person.name"
+      />
+
+      <h4>Informações pessoais</h4>
+
+      <p class="text--subtitle">Conhecido(a) por</p>
+      <p>{{ person.known_for_department }}</p>
+
+      <p class="text--subtitle">Creditado(a) em</p>
+      <p>{{ person.popularity }}</p>
+
+      <p class="text--subtitle">Nascimento</p>
+      <p>{{ person.birthday | date: "dd-MM-yyyy" }}</p>
+
+      <p class="text--subtitle">Local de nascimento (em inglês)</p>
+      <p>{{ person.place_of_birth }}</p>
+
+      <p class="text--subtitle">Gênero</p>
+      <p>{{ getGenrer(person.gender) }}</p>
+
+      <p class="text--subtitle">Homepage</p>
+      <p>
+        <a [href]="person.homepage">{{ person.homepage }}</a>
+      </p>
+
+      <p class="text--subtitle">Também conhecido(a) como</p>
+      <p *ngFor="let item of person.also_known_as">{{ item }}</p>
+    </div>
+
+    <!---->
+
+    <div class="fs-person__right">
+      <h1 class="margin-bottom--30">{{ person.name }}</h1>
+
+      <h5>Biografia</h5>
+      <p class="margin-bottom--30">{{ person.biography }}</p>
+
+      <h5>Conhecido(a) por</h5>
+
+      <ul>
+        <li *ngFor="let item of movies">
+          <a [routerLink]="['/movie', item.id]">
+            <img
+              *ngIf="item.poster_path; else noPost"
+              [src]="URL_IMAGES + item.poster_path"
+              [alt]="item.title"
+            />
+          </a>
+          <a [routerLink]="['/movie', item.id]">{{ item.title }}</a>
+          <p>{{ item.character }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<ng-template #noPost>
+  <div class="fs-person__not-post"></div>
+</ng-template>

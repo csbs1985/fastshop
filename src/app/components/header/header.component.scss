@@ -10,8 +10,8 @@
 
   &__content {
     width: 100%;
-    max-width: 1300px;
-    height: 64px;
+    max-width: var(--width-page);
+    height: var(--height-header);
     display: flex;
     justify-content: space-between;
     padding: 0 40px;

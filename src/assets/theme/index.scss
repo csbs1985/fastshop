@@ -1,14 +1,16 @@
 @import "./settings/color";
 @import "./settings/font";
 @import "./settings/reset";
+@import "./settings/size";
 
 @import "./elements/h";
-@import "./elements/font-size";
+@import "./elements/font";
 @import "./elements/margin";
 @import "./elements/scroll";
 
 @import "./generic/gradient";
 
+@import "./components/color";
 @import "./components/display";
 @import "./components/page";
 @import "./components/text";

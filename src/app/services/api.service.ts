@@ -9,7 +9,7 @@ export class ApiService {
   private baseUrl = environment.url;
   private key = environment.key;
 
-  // fonte: https://www.themoviedb.org/documentation/api/discover
+  // fonte: https://developers.themoviedb.org/3/movies/get-movie-credits
 
   constructor(private http: HttpClient) {}
 
@@ -25,6 +25,16 @@ export class ApiService {
 
   getMovies(movieId: string) {
     const url = `${this.baseUrl}/movie/${movieId}?${this.key}&language=pt-BR&append_to_response=credits`;
+    return this.http.get(url).toPromise();
+  }
+
+  getPerson(personId: string) {
+    const url = `${this.baseUrl}/person/${personId}?${this.key}&language=pt-BR&append_to_response=movies`;
+    return this.http.get(url).toPromise();
+  }
+
+  getAllMoviesPerPerson(personId: string) {
+    const url = `${this.baseUrl}/discover/movie?${this.key}&language=pt-BR&with_people=${personId}&append_to_response=credits`;
     return this.http.get(url).toPromise();
   }
 
