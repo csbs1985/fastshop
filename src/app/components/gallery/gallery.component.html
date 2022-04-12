@@ -2,10 +2,18 @@
   <ul>
     <li *ngFor="let item of content">
       <a [routerLink]="['/movie', item.id]">
-        <img [src]="item.poster_path" [alt]="item.title"
-      /></a>
+        <img
+          *ngIf="item.poster_path; else noPost"
+          [src]="item.poster_path"
+          [alt]="item.title"
+        />
+      </a>
       <a [routerLink]="['/movie', item.id]">{{ item.title }}</a>
       <p>{{ item.release_date }}</p>
     </li>
   </ul>
 </section>
+
+<ng-template #noPost>
+  <div class="fs-gallery__not-post"></div>
+</ng-template>

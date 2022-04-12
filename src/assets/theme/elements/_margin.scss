@@ -1,0 +1,10 @@
+.margin {
+  &-top {
+    &--10 {
+      margin-top: 0.625rem;
+    }
+    &--20 {
+      margin-top: 1.25rem;
+    }
+  }
+}

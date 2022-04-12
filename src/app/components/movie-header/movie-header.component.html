@@ -1,0 +1,35 @@
+<section
+  class="fs-movie-header"
+  [style.background-image]="'url(' + movie.backdrop_path + ')'"
+>
+  <div class="fs-movie-header__banner gradient--dark-blue">
+    <div class="fs-movie-header__content">
+      <img [src]="movie.poster_path" [alt]="movie.title" />
+
+      <div>
+        <h1>
+          {{ movie.title }}
+          <span class="font-size--35 font-weight--300">({{ movie.year }})</span>
+        </h1>
+
+        <div class="display--flex">
+          <p>{{ movie.release_date }} (BR) &bull; &nbsp;</p>
+          <p *ngFor="let genre of movie.genres">
+            {{ genre.name }} &nbsp;&bull;&nbsp;
+          </p>
+          <p>{{ movie.runtime }}m</p>
+        </div>
+
+        <p class="text--tagline margin-top--20">{{ movie.tagline }}</p>
+
+        <h4 class="margin-top--10">Sinopse</h4>
+
+        <p class="margin-top--10">{{ movie.overview }}</p>
+
+        <h4 class="margin-top--20">Avaliação dos usuários</h4>
+
+        <h1>{{ movie.vote_average }}%</h1>
+      </div>
+    </div>
+  </div>
+</section>

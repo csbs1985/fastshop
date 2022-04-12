@@ -88,13 +88,17 @@ export class HomeComponent implements OnInit {
     content.forEach((item: any) => {
       this.galleryTemp.push({
         id: item.id,
-        backdrop_path: this.URL_IMAGES + item.backdrop_path,
-        poster_path: this.URL_IMAGES + item.poster_path,
+        backdrop_path: this.formatImages(item.backdrop_path),
+        poster_path: this.formatImages(item.poster_path),
         release_date: this.formatDate(item.release_date),
         title: item.title,
         vote_average: item.vote_average,
       });
     });
+  }
+
+  private formatImages(image: string): string {
+    return image ? this.URL_IMAGES + image : '';
   }
 
   private formatDate(date: string): string {

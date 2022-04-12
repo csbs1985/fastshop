@@ -22,4 +22,12 @@
       var(--tmdbLogoRed)
     );
   }
+
+  &--dark-blue {
+    background: linear-gradient(
+      to right,
+      rgba(31.5, 31.5, 52.5, 1) 150px,
+      rgba(31.5, 31.5, 52.5, 0.84) 100%
+    );
+  }
 }

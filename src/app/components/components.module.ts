@@ -9,6 +9,7 @@ import { LeadersComponent } from './leaders/leaders.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
+import { MovieHeaderComponent } from './movie-header/movie-header.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MenuComponent } from './menu/menu.component';
     LeadersComponent,
     GalleryComponent,
     MenuComponent,
+    MovieHeaderComponent,
   ],
   exports: [
     IconComponent,
@@ -30,6 +32,7 @@ import { MenuComponent } from './menu/menu.component';
     LeadersComponent,
     GalleryComponent,
     MenuComponent,
+    MovieHeaderComponent,
   ],
   imports: [CommonModule, RouterModule],
 })
