@@ -2,4 +2,6 @@
   <fs-menu></fs-menu>
 
   <fs-movie-header *ngIf="isMovie" [content]="movie"></fs-movie-header>
+
+  <fs-cast *ngIf="isMovie" [content]="movie.credits.cast"></fs-cast>
 </section>

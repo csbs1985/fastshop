@@ -13,28 +13,28 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getMostPopular() {
-    const url = `${this.baseUrl}/discover/movie?sort_by=popularity.desc&${this.key}`;
+  getFree() {
+    const url = `${this.baseUrl}/discover/movie?sort_by=free_scroller.desc&${this.key}&language=pt-BR`;
     return this.http.get(url).toPromise();
   }
 
-  getFree() {
-    const url = `${this.baseUrl}/discover/movie?sort_by=free_scroller.desc&${this.key}`;
+  getMostPopular() {
+    const url = `${this.baseUrl}/discover/movie?sort_by=popularity.desc&${this.key}&language=pt-BR`;
     return this.http.get(url).toPromise();
   }
 
   getMovies(movieId: string) {
-    const url = `${this.baseUrl}/movie/${movieId}?${this.key}`;
+    const url = `${this.baseUrl}/movie/${movieId}?${this.key}&language=pt-BR&append_to_response=credits`;
     return this.http.get(url).toPromise();
   }
 
   getTrailers() {
-    const url = `${this.baseUrl}/discover/movie?sort_by=trailer_scroller.desc&${this.key}`;
+    const url = `${this.baseUrl}/discover/movie?sort_by=trailer_scroller.desc&${this.key}&language=pt-BR`;
     return this.http.get(url).toPromise();
   }
 
   getTendencies() {
-    const url = `${this.baseUrl}/discover/movie?sort_by=trending_scroller.desc&${this.key}`;
+    const url = `${this.baseUrl}/discover/movie?sort_by=trending_scroller.desc&${this.key}&language=pt-BR`;
     return this.http.get(url).toPromise();
   }
 }

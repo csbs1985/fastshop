@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { MovieHeaderComponent } from './movie-header/movie-header.component';
+import { CastComponent } from './cast/cast.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MovieHeaderComponent } from './movie-header/movie-header.component';
     GalleryComponent,
     MenuComponent,
     MovieHeaderComponent,
+    CastComponent,
   ],
   exports: [
     IconComponent,
@@ -33,6 +35,7 @@ import { MovieHeaderComponent } from './movie-header/movie-header.component';
     GalleryComponent,
     MenuComponent,
     MovieHeaderComponent,
+    CastComponent,
   ],
   imports: [CommonModule, RouterModule],
 })

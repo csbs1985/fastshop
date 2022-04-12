@@ -1,0 +1,23 @@
+<section class="fs-cast">
+  <div>
+    <h5>Elenco principal</h5>
+
+    <ul>
+      <li *ngFor="let item of content">
+        <a [routerLink]="['/person', item.id]">
+          <img
+            *ngIf="item.profile_path; else noPost"
+            [src]="URL_IMAGES + item.profile_path"
+            [alt]="item.name"
+          />
+        </a>
+        <a [routerLink]="['/person', item.id]">{{ item.name }}</a>
+        <p>{{ item.character }}</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<ng-template #noPost>
+  <div class="fs-cast__not-post"></div>
+</ng-template>
