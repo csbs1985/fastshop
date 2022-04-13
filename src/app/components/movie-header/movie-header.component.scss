@@ -11,8 +11,19 @@
     display: flex;
 
     img {
+      width: 200px;
+      min-height: 300px;
+      max-height: 300px;
       border-radius: 8px;
       margin-right: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__content > img {
+      width: 300px;
+      min-height: 450px;
+      max-height: 450px;
     }
   }
 }

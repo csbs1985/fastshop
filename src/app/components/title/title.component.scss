@@ -38,4 +38,46 @@
       }
     }
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      background-color: var(--tmdbLight);
+      align-items: stretch;
+      align-content: center;
+      border: 1px solid var(--tmdbDarkBlue);
+      border-radius: 30px;
+      margin-left: 20px;
+
+      li {
+        span {
+          cursor: pointer;
+          padding: 4px 20px;
+          color: var(--tmdbDark);
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        &:first-of-type {
+          border-radius: 30px;
+          background-color: var(--tmdbDarkBlue);
+          span {
+            background: linear-gradient(
+              to right,
+              #90cea1 0%,
+              #3cbec9 50%,
+              #00b3e5 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
