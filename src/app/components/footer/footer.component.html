@@ -1,16 +1,18 @@
 <section class="fs-footer">
   <div class="fs-footer__content">
-    <div>
+    <div class="fs-footer__left">
       <img [src]="image" />
 
       <button>JUNTE-SE A COMUNIDADE</button>
     </div>
 
-    <ul *ngFor="let item of navigation">
-      <h4>{{ item.category }}</h4>
-      <li *ngFor="let subItem of item.value">{{ subItem }}</li>
-    </ul>
+    <div class="fs-footer__right">
+      <nav *ngFor="let item of navigation">
+        <h4>{{ item.category }}</h4>
+        <p *ngFor="let subItem of item.value">{{ subItem }}</p>
+      </nav>
+    </div>
   </div>
 
-  <p>Build 3ec6559 (3601)</p>
+  <footer>Build 3ec6559 (3601)</footer>
 </section>
