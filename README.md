@@ -85,7 +85,5 @@ Acredito que tenha abordado todos os pontos, qualquer duvida estou à disposiç�
 
 ## Charles Santos
 
-Meus dados para contato:
-[Curriculo](https://drive.google.com/file/d/17Ne_Wy6i2a_I0sPw3NZ_8KCqcyY9RFYS/view?usp=sharing)
-[Github](https://github.com/csbs1985)
-[Linkedin](https://www.linkedin.com/in/csbs1985/)
+Contatos:
+[Curriculo](https://drive.google.com/file/d/17Ne_Wy6i2a_I0sPw3NZ_8KCqcyY9RFYS/view?usp=sharing), [Github](https://github.com/csbs1985) e [Linkedin](https://www.linkedin.com/in/csbs1985/)
