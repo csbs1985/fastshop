@@ -12,7 +12,7 @@
           <span class="font-size--35 font-weight--300">({{ movie.year }})</span>
         </h1>
 
-        <div class="display--flex">
+        <div class="display--flex white-space--nowrap">
           <p>{{ movie.release_date }} (BR) &bull; &nbsp;</p>
           <p *ngFor="let genre of movie.genres">
             {{ genre.name }} &nbsp;&bull;&nbsp;
