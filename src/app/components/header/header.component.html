@@ -1,8 +1,14 @@
 <section class="fs-header">
-  <div class="fs-header__content">
-    <div class="fs-header__left">
-      <fs-icon (click)="toggleMenu()" icon="menu" [height]="20"></fs-icon>
+  <div class="fs-header__mobile">
+    <fs-icon (click)="toggleMenu()" icon="menu" [height]="20"></fs-icon>
 
+    <img [src]="image" />
+
+    <fs-icon icon="search" [height]="20"></fs-icon>
+  </div>
+
+  <div class="fs-header__desktop">
+    <div class="fs-header__left">
       <fs-icon [routerLink]="'/'" icon="logo" [height]="20"></fs-icon>
 
       <ul>
