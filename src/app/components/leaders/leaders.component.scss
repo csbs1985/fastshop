@@ -7,7 +7,7 @@
     align-items: center;
     width: 56px;
     height: 56px;
-    min-width: 56px;
+    min-width: 56p;
     min-height: 56px;
     margin-right: 10px;
     border-radius: 50%;
@@ -44,7 +44,7 @@
 
     li {
       display: flex;
-      width: 50%;
+      width: 100%;
       margin-bottom: 20px;
 
       p {
@@ -54,6 +54,12 @@
         color: var(--tmdbDark);
         margin-left: 10px;
       }
+    }
+  }
+
+  @media (min-width: 920px) {
+    ul > li {
+      width: 50%;
     }
   }
 }
